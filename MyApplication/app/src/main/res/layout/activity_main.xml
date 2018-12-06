@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#170842"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_wallet"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_sort_black_24dp"/>
+            <TextView
+                android:id="@+id/hh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY WALLET"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginStart="110dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/reset_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_refresh_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="18dp"
+                android:background="@drawable/rr"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/hhs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   .... .... .... 5168"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="18dp"
+                android:background="@drawable/oo"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ListView
+            android:id="@+id/stub_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="#170842"
+            android:dividerHeight="15dp"
+            android:gravity="center|bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
